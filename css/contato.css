@@ -1,0 +1,47 @@
+.section1{
+    width: 100%;
+    height: 100%;
+    min-height: 50vh;
+    display: flex;
+    padding: 4rem;
+    }
+    
+.section1__info{
+    background-color:var(--color-background);
+    color: var(--text-primary);
+    width: 900px; 
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4rem;
+    padding: 6rem 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}    
+.title{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.section1__info p{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.icon{
+    max-width: 5rem;
+}
+.section1__info .address{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.section2 .map{
+    width: 100%;
+height: 100%;
+min-height: 50vh;
+border: none;
+}

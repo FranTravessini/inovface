@@ -24,7 +24,7 @@
 }
 
 .logo{
-    color: var(--text-primary);
+    color: #fff;
     font-size: 4rem;
     font-weight: 800;
     text-transform: uppercase;
@@ -33,9 +33,7 @@
 .accent{
     color: var(--color-primary);
 }
-.face{
-    color: var(--color-terc);
-}
+
 
 .subtitle{
     display: block;
@@ -124,7 +122,9 @@
     transform: rotate(-405deg);
 }
 
-
+.bt__nav .icon{
+    width: 6rem;
+}
 
 
 
