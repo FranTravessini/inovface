@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-secondary);
+    box-sizing: border-box;
+    /* background-color: var(--color-secundary); */
+}
+
+html{
+font-size: 62.5%;
+}
+
+.container {
+    max-width: 150rem;
+    width: 100%;
+    margin: 0 auto; /*fique centralizdo*/
+    padding: 0 2rem; /*para não ficar colado nas laterais*/
+}

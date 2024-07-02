@@ -1,0 +1,132 @@
+.section1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem;
+}
+.lines {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    max-width: 55rem;
+    /* background-image: url(../imagens/linhas.svg); */
+}
+
+.section1 .text{
+    font-family: var(--font-secondary);
+    color: var(--text-primary);
+    font-size: 5rem;
+    font-weight: 700;
+    max-width: 80rem;
+}
+
+.section1 .text small{
+    font-size: 3rem;
+    font-weight: 100;
+    display: block;
+    margin-top: 6rem;
+}
+.pessoa{
+   margin: 0 auto;
+}
+
+.section2{
+    padding-bottom: 4rem;
+    background-color: var(--color-secundary);
+    color: var(--text-secondary);
+}
+.div__sec2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 4rem;
+    
+}
+.div__sec2 .text{
+    color: var(--text-secondary);
+    font-size: 5rem;
+    font-weight: 700;
+    max-width: 80rem;
+}
+.div__sec2 .text span{
+    color: var(--text-secondary);
+    font-size: 3rem;
+    font-weight: 100;
+    max-width: 80rem;
+    
+}
+.div__sec2 .text .num{
+    font-size: 7rem;
+}
+.div__sec2 .text .par{
+    display: block;
+    margin-top: -10rem;
+    margin-left: 14rem;
+    font-weight: 100;
+
+    
+}
+
+.section3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 4rem;
+}
+.section3 .text{
+    width: 100%; 
+    font-family: var(--font-secondary);
+    color: var(--text-primary);
+    font-size: 5rem;
+    font-weight: 700;
+    max-width: 80%;
+}
+.text small{
+    font-size: 3rem;
+    font-weight: 100;
+    display: block;
+    margin-top: 2rem;
+}
+
+.tratamentos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: var(--text-primary);
+    width: 100%;
+    min-width: 60rem;
+    
+}
+.trata .teste{
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+}
+.teste li a{
+    text-decoration: none;
+
+}
+.teste li p{
+    font-size: 4rem;
+    list-style: none;
+}
+.teste li a{
+text-decoration: none;
+align-items: start;
+font-size: 2.5rem;
+color: var(--color-primary);
+}
+
+.trata .trata__button1 .bt__sec{
+    position: absolute;
+    top: 80rem;
+    right: 80rem;
+    border: 3px solid #73AD21;
+    text-decoration: none;
+    background-color: var(--color-secundary);
+    color: aliceblue;
+    padding: 1rem 5rem;
+
+}
