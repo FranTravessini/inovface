@@ -2,69 +2,92 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 4rem;
 }
-.lines {
-    background-size: contain;
-    background-repeat: no-repeat;
+
+.section1__image{
     height: 100%;
     width: 100%;
     max-width: 55rem;
-    /* background-image: url(../imagens/linhas.svg); */
 }
 
-.section1 .text{
+.section1__info{
+    background-color:var(--color-background);
+    color: var(--text-primary);
+    width: 900px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6rem 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.section1 .title{
     font-family: var(--font-secondary);
     color: var(--text-primary);
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 700;
     max-width: 80rem;
 }
 
-.section1 .text small{
-    font-size: 3rem;
+.section1 .texto{
+    /* display: block; */
+    font-size: 1.8rem;
     font-weight: 100;
-    display: block;
     margin-top: 6rem;
 }
-.pessoa{
-   margin: 0 auto;
-}
+
 
 .section2{
-    padding-bottom: 4rem;
-    background-color: var(--color-secundary);
-    color: var(--text-secondary);
-}
-.div__sec2{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 4rem;
-    
-}
-.div__sec2 .text{
+    background-color: var(--color-secundary);
     color: var(--text-secondary);
-    font-size: 5rem;
+}
+
+.section2__info{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+
+ 
+}
+
+/* .div__sec2{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem;   
+} */
+.section2 .title{
+    color: var(--text-secondary);
+    font-size: 3rem;
     font-weight: 700;
     max-width: 80rem;
 }
-.div__sec2 .text span{
+.section2 .title span{
     color: var(--text-secondary);
-    font-size: 3rem;
+    font-size: 2rem;
+    font-weight: 700;
+    max-width: 80rem;
+}
+
+.section2 p{
+    font-size: 1.8rem;   
+    color: var(--text-secondary);
     font-weight: 100;
     max-width: 80rem;
-    
 }
-.div__sec2 .text .num{
-    font-size: 7rem;
-}
-.div__sec2 .text .par{
-    display: block;
-    margin-top: -10rem;
-    margin-left: 14rem;
+.section2 .num{
+    color: var(--text-secondary);
+    font-size: 5rem;
     font-weight: 100;
-
+    max-width: 80rem;
     
 }
 

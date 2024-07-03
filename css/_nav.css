@@ -1,22 +1,22 @@
 
 .nav {
+    background-color: var(--color-secundary);
     font-family: var(--font-primary);
     color:  var(--color-terc);
-    background-color: var(--color-secundary);
     width: 100%;
     padding: 2 rem;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    min-height: 10rem;
+    min-height: 8rem;
 }
 .container__nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     font-family: var(--font-primary);
-    align-items: center;
-    padding-top: 2rem;
+    padding-top: 1rem;
    
 }
 .nav a{
@@ -37,9 +37,9 @@
 
 .subtitle{
     display: block;
-    margin-top: -1.5rem;
     text-align: right;
-    font-size: 1.5rem;
+    margin-top: -1rem;
+    font-size: 1.4rem;
     font-weight: 300;
     color: var(--color-terc);
 }
@@ -56,7 +56,7 @@
 
 .menu a{
     color: var(--color-terc);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 400;
     text-transform: uppercase;
     transition: color 0.5s linear;
@@ -123,14 +123,14 @@
 }
 
 .bt__nav .icon{
-    width: 6rem;
+    width: 4rem;
 }
 
 
 
 @media screen and (max-width: 800px) {
     .logo{
-        font-size: 3.5rem;
+        font-size: 1.5rem;
     }
 
     .menu-button-container{
@@ -176,6 +176,6 @@
 
 @media screen and (max-width: 460px) {
     .logo{
-        font-size: 3rem;
+        font-size: 1rem;
     }
 }
