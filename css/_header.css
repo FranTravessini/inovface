@@ -48,6 +48,34 @@
     max-width:50rem;
   
 }
+.header__home .container__home{
+    height: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.header__home .title{
+    color: var(--color-secundary);
+    font-family: var(--font-primary);
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: left;
+    max-width: 80rem;
+}
+.header__home .text{
+    color: var(--color-secundary);
+    font-family: var(--font-primary);
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-align: left;
+
+}
+
+
 
 @media screen and (max-width:800px){
 

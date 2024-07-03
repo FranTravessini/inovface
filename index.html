@@ -4,78 +4,191 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Studion</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <title>InovFace - home</title>
 </head>
 <body>
-    <nav>
-
-        <a href="./">
-             <h1>
-                Studi<span class="accent">on</span> 
-                <span class="subtitle">Eventos</span>
-            </h1>
-        </a>
-
-        <h1>
-            Studi<span class="accent">on</span>
-        <ul>
-            <li>
-                <a href="./empresa.html" >Empresa</a>
-            </li>
-            <li>
-                <a href="./eventos.html">Eventos</a>
-            </li>           
-             <li>
-                <a href="./galeria.html">Galeria</a>
-            </li>            
-            <li>
-                <a href="./depoismentos.html">Depoimentos</a>
-            </li>            
-            <li>
-                <a href="./contato.html">Contato</a>
-            </li>
-        </ul>
-        <a class="bt__nav" href="./dradaniela.html">
-            <img class="icon" src="./imagens/icons/whats-rosa.png" alt="enviar">
-         </a>
+    <nav class="nav" >
+        <div class="container container__nav">
+            <a href="./index.html">
+                <h1 class="logo">
+                    <span class="accent">INOV</span><span class="face">FACE</span> 
+                <span class="subtitle">ESTÉTICA AVANÇADA</span>
+                 </h1>
+             </a>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+                <div class="menu-button">
+                </div>
+        </label>
+            <ul class="menu">
+                <li>
+                    <a href="./dradaniela.html" >Dra Daniela Travessini</a>
+                </li>
+                <li>
+                    <a href="./tratamentos.html">Tratamentos</a>
+                </li>                     
+                <li>
+                    <a href="./depoimentos.html">Depoimentos</a>
+                </li>            
+                <li>
+                    <a href="./contato.html" >Contato</a>
+                </li>
+            </ul>
+            <a class="bt__nav" href="./dradaniela.html">
+                <img class="icon" src="./imagens/icons/whats-rosa.png" alt="enviar">
+             </a>
+        </div>
     </nav>
 
-    <header class="container">
-        <h2>.home</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa</p>
+    <header class="header header__home">
+        <img class="background__header" src="./imagens/linhas-header.png" alt="linhas">
+        <div class="container container__home">
+            <h2 class="title" >ESPECIALIZADA EM CUIDAR DA SUA BELEZA!</h2>
+            <p class="text" >Somos a INOVFACE, a clínica de estética avançada e referência em Itapema – SC.</p>
+        </div>
+        
     </header>
 
     <main>
-        
+        <section class="section1" >
+            <div class="container container__home" >
+                <div class=" info">
+                    <h2>+ DE 3000
+                        <small>PACIENTES ATENDIDOS</small>
+                    </h2>
+                </div>
+                <div class="info">
+                    <h2>+ DE 3
+                        <small>ANOS DE EXPERIÊNCIA</small>
+                    </h2>
+                </div>
+                <div class="info">
+                    <h2>+ DE 5
+                        <small>CURSOS PRESTADOS</small>
+                    </h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section2" >
+            <div class=" section2__image">
+                <img src="./imagens/clinica/clinica-1.png" alt="mulher" >
+            </div>
+            <div class="section2__info">
+                <h4 class="title"> <small>FAZEMOS O SEU SONHO ACONTECER</small>Quem somos? 
+                <p class="texto" >
+                    Lorem ipsum dolor sit, amet consectetur 
+                    Lorem ipsum dolor sit, 
+                    amet consecteturLorem ipsum dolor sit, 
+                    amet consecteturLorem ipsum dolor sit, 
+                    amet consecteturLorem ipsum dolor sit, 
+                    amet consecteturLorem ipsum dolor sit, 
+                    amet consecteturLorem ipsum dolor sit, 
+                    amet consecteturLorem ipsum dolor sit, 
+                    amet consecteturLorem ipsum dolor sit, 
+                    amet consecteturLorem ipsum dolor sit, 
+                    amet consecteturLorem ipsum dolor sit, 
+                    amet consecteturLorem ipsum dolor sit, 
+                    amet consecteturLorem ipsum dolor sit, 
+                    amet consecteturLorem ipsum dolor sit, 
+                    amet consecteturLorem ipsum dolor sit, 
+                    amet consecteturLorem ipsum dolor sit, 
+                    amet consectetur
+                </p>
+                </h4>
+                <a class="button" href="./tratamentos.html">Saiba mais</a>
+            </div>
+        </section>
+
+        <section class="section3">
+            <section class=" container carousel" aria-label="Gallery">
+                <ol class="carousel__viewport">
+                    <li 
+                        id="carousel__slide1"
+                        tabindex="0"
+                        class="carousel__slide">
+                        <div class="carousel__snapper"></div>
+                        <a href="#carousel__slide3"
+                            class="carousel__prev"></a>
+                            
+                                <section class="section" >
+                                    <div class="box" >
+                                        <img src="./imagens/clinica/clinica-2.png" alt="">
+                                        </div>                                                
+                                </section>
+       
+                        <a href="#carousel__slide2"
+                            class="carousel__next"></a>
+                    
+                    </li>
+                    <li 
+                        id="carousel__slide2"
+                        tabindex="0"
+                        class="carousel__slide"
+                    >
+                        <div class="carousel__snapper"></div>
+                        <a href="#carousel__slide1"
+                        class="carousel__prev"></a>
+                        
+                            <section class="section" >
+                                <div class="box" >
+                                    <img src="./imagens/clinica/clinica-3.png" alt="">
+                                    </div>
+                            </section>
+                   
+                        <a href="#carousel__slide3"
+                        class="carousel__next"></a>
+                  </li>
+                  <li id="carousel__slide3"
+                      tabindex="0"
+                      class="carousel__slide">
+                        <div class="carousel__snapper"></div>
+                        <a href="#carousel__slide2"
+                        class="carousel__prev"></a>
+    
+                                <section class="section" >
+                                    <div class="box" >
+                                        <img src="./imagens/clinica/clinica-4.png" alt="">
+                                        </div>
+                                </section>
+      
+                        <a href="#carousel__slide1"
+                        class="carousel__next"></a>
+                  </li>
+                </ol>
+                
+              </section>
+            </section>
+    
     </main>
 
-    <footer>
-        <div class="container container__footer">
-            <h2>
-                <span class="accent">INOV</span>FACE 
-                <span class="subtitle">ESTÉTICA AVANÇADA</span>
-            </h2>
-            
-            <ul class="socials">
-                <li>
-                    <a href="#">
-                        <img class="icon" src="./imagens/icons/insta-rosa.png" alt="instagran">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img class="icon" src="./imagens/icons/whats-rosa.png" alt="whatsapp">
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <hr/>
-        <div class="container copyright">
-            <p ><span>INOV</span>FACE - Todos os direitos reservados</p>
-            <p  >Desenvolvido por <span>@FranTravessini</span></p>
-        </div>
-
-    </footer>
+<footer class="footer">
+    <div class="container container__footer">
+        <h2>
+            <span class="accent">INOV</span>FACE 
+            <span class="subtitle">ESTÉTICA AVANÇADA</span>
+        </h2>
+        
+        <ul class="socials">
+            <li>
+                <a href="#">
+                    <img class="icon" src="./imagens/icons/insta-rosa.png" alt="instagran">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="icon" src="./imagens/icons/whats-rosa.png" alt="whatsapp">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <hr/>
+    <div class="container copyright">
+        <p ><span>INOV</span>FACE - Todos os direitos reservados</p>
+        <p  >Desenvolvido por <span>@FranTravessini</span></p>
+    </div>
+</footer>
 
 </body>
 </html>
