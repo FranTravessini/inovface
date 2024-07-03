@@ -30,7 +30,7 @@
 
 .box .text{
     color: var(--text-secondary);
-    max-width: 30rem;
+    max-width: 20rem;
     font-size: 1.5rem;
     font-weight: 300;
     text-wrap: wrap;
@@ -265,10 +265,10 @@
   }
   
   .carousel::before {
-    background-image: url("../imagens/voltar.png");
+    background-image: url("../imagens/icons/voltar.png");
   }
   .carousel::after {
-    background-image: url("../imagens/avançar.png");
+    background-image: url("../imagens/icons/avançar.png");
 }
   
 @media screen and (max-width: 800px) {
