@@ -70,3 +70,75 @@
     box-shadow: 0.1rem 0.5rem 1rem #333;
   }
 
+/* media screen --------------- */
+
+  @media screen and (max-width:800px){
+    
+    .event__image {
+      max-width: 30rem;
+      min-height: 10rem;
+    }
+    
+    .event__title {
+      font-size: 2rem;
+
+    }
+    
+    .event__description {
+      font-size: 1.4rem;
+
+    }
+    
+    .event__buy-ticket {
+   
+      width: 12rem;
+      height: 2rem;
+      border-radius: 6rem;
+
+      font-size: 0.8rem;
+    }
+
+
+  }
+  @media screen and (max-width:460px){
+    .events{
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      gap: 4rem;
+    }
+    .event {
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .event__info {
+      align-items: center;
+      gap: 1rem;
+    }
+    .event__image {
+      max-width: 25rem;
+      min-height: 5rem;
+    }
+    
+    .event__title {
+      font-size: 1.8rem;
+
+    }
+    
+    .event__description {
+      font-size: 1.2rem;
+      max-width: 30rem;
+
+    }
+    
+    .event__buy-ticket {
+   
+      width: 12rem;
+      height: 2rem;
+      border-radius: 6rem;
+
+      font-size: 0.7rem;
+    }
+ 
+    
+    
+  }

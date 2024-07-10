@@ -1,85 +1,134 @@
-.section1{
-background-color: var(  --color-secundary);
-padding: 2rem;
+/* . HEADER ____________________*/
+.slider {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff;
+}
+/* SLIDER */
+.slide__background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.slide__info{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 20vw;
+  display: grid;
+  align-items: center;
+}
+.slide__info__title{
+  font-family: var(--font-primary);
+  font-size: 4rem;
+  font-weight: 700;
+  width: 100%;
+  /* max-width: 50rem; */
+  
+}
+.slide__info__text{
+  font-size: 1.8rem;
+  font-weight: 300;
+  padding-top: 1.6rem;
+}
+
+/*________________________________________________*/
+
+
+/* COUNTER ___________________*/
+.counter{
+background-color: var(--text-primary);
+color: #fff;
+margin-top: -2.4rem;
 }
 .container__home{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    text-align: center;
     flex-wrap: wrap;
-    justify-content: space-between;
-}
-.info{
-   
-    max-width: 50rem;
-    align-content: center;
-    justify-content: space-between;
-    align-items: center;
-    color: aliceblue;
-}
+    padding: 4rem 0rem;
 
-.info h2{
-    font-size: 4rem;
-    font-weight: 700;
 }
-.info h2 small{
+.info h3{
+  font-size: 3rem;
+  font-weight: 700;
+}
+.info h3 small{
     display: block; 
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 300;
 }
+
+/*_______________________________________________*/ 
+
+/* SECTION 2 ___________________*/
 
 .section2{
-    display: flex;
-    flex-direction: row;
-    padding: 2rem;
+background-color: var(--color-background);
+}
+.container__section2{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 4rem;
+  align-items: center;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+.image{
+width: 100%;
+max-width: 55rem;
 }
 
-.section2__image{
-    height: 100%;
-    width: 100%;
-}
 .section2__info{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    color: var(  --color-secundary);
-    gap: 3rem;
+  width: 100%;
+  max-width: 50rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
-.section2__info .title small{
-    display: block;
-    font-size: 2rem;
-    font-weight: 300;
-    text-align: right;
-    margin-bottom: -1.8rem;
+.section2__info h6{
+  font-size: 1.4rem;
+  font-weight: 300;
 }
-
 .section2__info .title{
- font-size: 4rem;
- font-weight: 700;
- text-align: right;
- 
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 .section2__info .texto{
-    font-size: 1.8rem;
-    font-weight: 300;
-    text-align: right;
-    max-width: 80rem;
-   }
-
+  font-size: 1.6rem;
+  font-weight: 300;
+  max-width: 40rem;
+}
 .section2__info .button{
     display: flex;
     justify-content: center;
-    align-items: center;
+    place-items: center; /*Se align-itens e justfy-itens for igual pode usar o place-itens */
     flex-shrink: 0;
   
     width: 18rem;
     height: 4rem;
-    border-radius: 6rem;
+    transition: all 500ms ease;
 
-  
+    border-radius: 6rem;
+    border: none;
+
     background-color: var(--color-secundary);
     color: var(--text-secondary);
-  
+
     text-decoration: none;
     font-size: 2rem;
     font-weight: 300;
@@ -89,11 +138,86 @@ padding: 2rem;
     box-shadow: 0.1rem 0.5rem 1rem #333;
 }
 
-.section3{
- 
+/*________________________________________________*/
+
+
+
+/* QUOTE ____________________*/
+.quote{
+  background-image: url("../imagens/parallax-home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin-top: -2.2rem;
+  
+}
+.quote__container {
+  display: grid;
+  align-items: center;
+  justify-items: end;
+  min-height: 80vh;
 }
 
-/*-----------------------------------*/
+.quote__content {
+  background: var(--color-background);
+  color: var( --color-secundary);
+  padding: 8rem 8rem;
+  border-radius: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.quote__content h6 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  max-width: 24rem;
+}
+
+.quote__content h2 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  width: 100%;
+  max-width: 50rem;
+}
+
+.quote__content h2 span {
+  display: block;
+  color: var(--color-primary);
+  margin-top: -1.6rem;
+}
+
+.quote__content a {
+  width: 17rem;
+  height: 5rem;
+  transition: all 500ms ease;
+
+  display: flex;
+  place-items: center;
+  justify-content: center;
+
+  border-radius: 8rem;
+  border: solid 0.2rem #fff;
+
+  background: var(--color-primary);
+  color: var(--color-terc);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.quote__content a:hover {
+  background: var(--color-secondary);
+  color: var(--text-primary);
+  box-shadow: 0.1rem 0.5rem 1rem #333;
+}
+
+/*________________________________________________*/
+
+/* CAROUSEL____________________*/
 
 @keyframes tonext {
     75% {
@@ -110,21 +234,6 @@ padding: 2rem;
     }
   }
   
-  /* @keyframes tostart {
-    75% {
-      left: 0;
-    }
-    95% {
-      left: -300%;
-    }
-    98% {
-      left: -300%;
-    }
-    99% {
-      left: 0;
-    }
-  } */
-  
   @keyframes snap {
     96% {
       scroll-snap-align: center;
@@ -139,14 +248,7 @@ padding: 2rem;
       scroll-snap-align: center;
     }
   }
-  
-  /* body {
-    max-width: 37.5rem;
-    margin: 0 auto;
-    padding: 0 1.25rem;
-    font-family: 'Lato', sans-serif;
-  } */
-  
+
   
   .carousel__viewport::-webkit-scrollbar {
     width: 0;
@@ -168,9 +270,10 @@ padding: 2rem;
   
   .carousel {
     position: relative;
-    padding-top: 42rem;
-    padding-bottom: 42rem;
+    padding-top: 60rem;
     perspective: 10rem;
+    height: 80vh;
+    color: #fff;
     /* filter: drop-shadow(0 0 10px #0003);  deixa um fundo sombreado*/
   }
   
@@ -204,7 +307,6 @@ padding: 2rem;
     left: 50%;
     transform: translate3d(-50%,-40%,70px);
     color: #fff;
-    font-size: 2em;
   }
   
   .carousel__snapper {
@@ -224,46 +326,13 @@ padding: 2rem;
       animation-iteration-count: 2;
     }
   
-    /* .carousel__slide:last-child .carousel__snapper {
-      animation-name: tostart, snap;
-    } */
-  }
-  
-  /* @media (prefers-reduced-motion: reduce) {
-    .carousel__snapper {
-      animation-name: none;
-    } ele reduz as animações em computadores com a opção de reduzir esteja ativada
-  } */
-  
+}
+
   .carousel:hover .carousel__snapper,
   .carousel:focus-within .carousel__snapper {
     animation-name: none;
   }
   
-  .carousel__navigation {
-    position: absolute;
-    right: 0;
-    bottom: -4rem;
-    left: 0;
-    text-align: center;
-  }
-  
-  .carousel__navigation-list,
-  .carousel__navigation-item {
-    display: inline-block;
-  }
-  
-  .carousel__navigation-button {
-    display: inline-block;
-    width: 2.4rem;
-    height: 2.4rem;
-    background-color: #fff;
-    background-clip: content-box;
-    border: 0.25rem solid transparent;
-    border-radius: 50%;
-    font-size: 0;
-    transition: transform 0.1s;
-  }
   
   .carousel::before,
   .carousel::after,
@@ -277,11 +346,6 @@ padding: 2rem;
     /* border-radius: 50%; */
     outline: 0;
   }
-  
-  /* .carousel::before,
-  .carousel__prev {
-    left: -1rem;
-  } */
   
   .carousel::after,
   .carousel__next {
@@ -304,4 +368,85 @@ padding: 2rem;
   }
   .carousel::after {
     background-image: url("../imagens/icons/avançar.png");
+}
+
+/* media screen --------------- */
+
+@media screen and (max-width:800px){
+
+.slide__info__title {
+    font-size: 3rem;
+    max-width:  50rem;
+}
+.slide__info__text {
+  font-size: 1.8rem;
+  max-width:  50rem;
+}
+
+.section2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+
+}
+.image{
+  display:none
+}
+.section2__info .title small{
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: -1.4rem;
+}
+
+.section2__info .title{
+font-size: 3rem;
+text-align: center;
+
+}
+.section2__info .texto{
+  font-size: 1.4rem;
+  text-align: center;
+ }
+
+.section2__info .button{
+   width: 12rem;
+  height: 2.8rem;
+  border-radius: 4rem;
+
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.carousel::before,
+.carousel::after {
+  background-size: 3rem 3rem;
+}
+
+
+
+}
+  
+  @media screen and (max-width:460px){
+
+    .slide__info__title {
+      font-size: 3rem;
+      max-width:  30rem;
+  }
+  .slide__info__text {
+    font-size: 1.8rem;
+    max-width:  30rem;
+  }
+
+  .container__home{
+    display: grid;
+    grid-template-columns: none;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 4rem 0rem;
+
+}
+.info{
+  padding: 3rem;
+}
 }
