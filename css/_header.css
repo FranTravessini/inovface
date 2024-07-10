@@ -1,6 +1,6 @@
 .header{
     position: relative;
-    z-index: -1;
+    /* z-index: -1; */
     /* background-color:  lightgray;
     background-position: center;
     background-size: cover; cobrir todo espaço disponivel
@@ -87,7 +87,13 @@
     font-size: 1.8rem;
     max-width: 50rem;
 }
+.header__home .title{
+    font-size: 3.5rem;
+ }
 
+.header__home .text{
+    font-size: 1.8rem;
+}
 
 }
 
@@ -100,6 +106,14 @@
     .container__header p{
         font-size: 1.4rem;
         max-width: 40rem;
+    }
+
+    .header__home .title{
+        font-size: 2.4rem;
+     }
+    
+    .header__home .text{
+        font-size: 1.4rem;
     }
 }
 
